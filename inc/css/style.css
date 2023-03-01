@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.conteneur {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*** HEADER ***/
+header {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+header nav{
+    margin-right: 20px;
+    padding: 15px;
+}
+
+.nav-link{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background: #fff;
+    color: #000;
+    transition: ease-in 0.2s;
+}
+
+#icon-caddie {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#icon-caddie:hover {
+    background-color: #fff;
+    transition: ease-in 0.2s;
+}
+
+#title {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+#title:hover {
+    color: #b90808;
+    transition: ease-in 0.2s;
+}
+
+/*** SECTION ***/
+
+section {
+    height: max-content;
+}
+
+/*** FOOTER ***/
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conteneur-footer {
+    padding: 10px;
+}
+
+.footer-link:hover {
+    color: #b90808;
+    transition: ease-in 0.2s;
+}
+
+/*** GENERAL ***/
+.erreur {
+    color: #b90808;
+    max-width: max-content;
+    margin: auto;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.validation {
+    background: #669933;
+    padding: 15px;
+    max-width: max-content;
+    margin: auto;
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
+label {
+    font-size: 1em;
+    margin: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    padding: 8px;
+    margin: 5px;
+    width: 300px;
+    box-shadow: 1px 1px 2px #C0C0C0 inset;
+    font-size: 1em;
+}
+
+input[type="radio"] {
+    background-color:transparent;
+    border:none;
+    width:20px;
+    height:20px;
+    margin: 5px;
+}
+
+input[type="file"] {
+    padding: 8px;
+    margin: 5px;
+    width: 300px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #CDCDCD;
+    color: #000;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.2em;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+    transition: ease-in 0.2s;
+}
+
+/*** INSCRIPTION ***/
+
+.msg-erreur {
+    color: #b90808;
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+}
+
+.form-inscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    background-color: #CDCDCD;
+    color: #000;
+}
+
+.civilite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.sexe {
+font-size: 1.2em;
+margin-right: 10px;
+}
+
+/*** CONNEXION ***/
+
+.form-connexion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    background-color: #CDCDCD;
+    color: #000;
+}
+
+/*** PROFIL ***/
+
+.titre-profil {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.titre-information {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.contenaire-profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: max-content;
+    background-color: #CDCDCD;
+    color: #000;
+    padding: 15px;
+}
+
+.contenaire-profil p {
+    margin: 5px;
+    margin-left: 25px;
+}
+
+/*** BACK OFFICE ***/
+
+.titre-bo-boutique {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.form-bo-boutique {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    background-color: #CDCDCD;
+    color: #000;
+}
+
+.bouton-gestion-boutique {
+    background-color: #CDCDCD;
+    color: #000;
+    padding: 8px;
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.bouton-gestion-boutique:hover {
+    background-color: #000;
+    color: #CDCDCD;
+    transition: ease-in 0.2s;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.bouton-modifier, .bouton-supprimer{
+    text-align: center;
+}
+
+/*** BOUTIQUE ***/
+.lien-categorie {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+
+.lien-categorie:hover {
+    background-color: #000;
+    color: #fff;
+    
+    transition: ease-in 0.2s;
+}
+
+.table-categorie {
+    width: 100%;
+    margin: auto;
+    background-color: #CDCDCD;
+    color: #000;
+}
+
+.table-categorie td {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.cartes-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartes-ligne {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carte {
+    border: 1px solid #000;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.carte img {
+    max-width: 100%;
+    margin: auto;
+    
+}
+
+.carte-corps {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+}
+
+.carte-titre {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.carte-prix {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.lien-fiche-produit {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.lien-fiche-produit:hover {
+    color: #b90808;
+    transition: ease-in 0.2s;
+}
+
+/*** FICHE PRODUIT ***/
+.fiche-produit {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+}
+
+.fiche-produit img{
+    max-width: 200px;
+    max-height: 500px;
+    margin: auto;
+    border: #000 1px solid;
+}
+.fiche-produit-corps {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 450px;
+}
+
+.fiche-produit-titre {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fiche-produit-prix {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fiche-produit-description {
+    font-size: 1.2em;
+    margin-bottom: 70px;
+}
+
+.fiche-produit-stock {
+    font-size: 1.1em;
+    color: #669933;
+    margin-bottom: 10px;
+}
+
+.fiche-produit-stock span {
+    color: #000;
+}
+
+.choix-quantite {
+
+}
+
+.fiche-produit-corps select {
+    margin-bottom: 10px;
+    width: 50px;
+    margin: 20px;
+}
+
+.lien-ajout-panier {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b8860b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.lien-ajout-panier:hover {
+    background-color: #fff;
+    color: #b8860b;
+    border: #b8860b 1px solid;
+    transition: ease-in 0.2s;
+}
+
+.lien-retour {
+    margin-top: 100px;
+}
+
+.lien-retour a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin: auto;
+}
+
+.lien-retour a:hover {
+    color: #b90808;
+    transition: ease-in 0.2s;
+}
+
+.lien-panier {
+    color: #b90808;
+    font-size: 1.3em;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+.lien-panier:hover {
+    color: #CDCDCD;
+    transition: ease-in 0.2s;
+}
+
+/*** PANIER ***/
+
+.lien-suppression {
+    color: #b90808;
+    font-size: 1.3em;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+.lien-suppression:hover {
+    color: #CDCDCD;
+    transition: ease-in 0.2s;
+}
+
+.vider-panier {
+    margin: 20px;
+}
+
+.vider-panier a{
+    color: #b90808;
+    font-size: 1.3em;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+.vider-panier a:hover {
+    color: #000;
+    transition: ease-in 0.2s;
+}
